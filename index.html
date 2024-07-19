@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <img id="toggle-mode" src="icons/moon-icon.png" alt="Toggle Dark Mode" onclick="toggleMode()">
+    </div>
+    <div class="container">
+        <h1>Productivity Timer</h1>
+        <div id="task-inputs">
+            <input type="text" placeholder="Task Name">
+            <input type="number" placeholder="Duration (minutes)">
+            <div>
+            <button id="add-task">Add Task</button>
+        </div>
+        </div>
+        <div id="task-list"></div>
+        <div id="timer-display"></div>
+        <div id="notification"></div>
+    </div>
+    <audio id="alert-sound" src="sounds/alert_jb2.wav"></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>
