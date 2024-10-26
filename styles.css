@@ -1,0 +1,191 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  color: #202124;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin-top: 40px;
+  border-top: 5px solid #4285f4; 
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #202124; 
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  font-size: 16px;
+  width: calc(50% - 22px); 
+  background-color: #f1f3f4;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4285f4;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3367d6; 
+}
+
+#timer-display {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #34a853; 
+}
+
+#notification {
+  font-size: 1.5em;
+  color: #ea4335; 
+  margin-top: 20px;
+}
+
+#task-list {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  background-color: #f1f3f4;
+  border: 1px solid #dadce0;
+}
+
+.task-duration {
+  background-color: #34a853;
+  color: #ffffff;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.task-controls button {
+  background-color: #e2a900; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-controls button:hover {
+  background-color: #c17900;
+}
+
+.drag-handle {
+  cursor: move;
+  padding-right: 10px;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#toggle-mode {
+  width: 20px; 
+  height: 20px;
+  cursor: pointer;
+  margin-right: 5px; 
+}
+
+.dark-mode-label {
+  font-size: 14px; 
+  color: #333; 
+  cursor: pointer;
+}
+
+#toggle-mode:hover {
+  transform: scale(1.1);
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #202124;
+}
+
+body.dark-mode {
+  background-color: #202124;
+  color: #101010;
+}
+
+body.dark-mode .container{
+  background-color: #303134;
+  color: #dbdbdb;
+}
+
+.container.dark-mode {
+  background-color: #2c2f33;
+  color: #dbdbdb;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+body.dark-mode input {
+  background-color: #000000;
+  color: #dbdbdb;
+}
+
+body.dark-mode button {
+  background-color: #3367d6;
+  color: #dbdbdb;
+}
+
+body.dark-mode button:hover {
+  background-color: #2b57b6;
+}
+
+body.dark-mode .task-item {
+  background-color: #303134;
+  border: 1px solid #3c4043;
+}
+
+
+.dark-mode .task-controls button {
+  background-color:  #e2a900;
+  color: black;
+  border: none; 
+}
+
+.dark-mode .task-controls button:hover {
+  background-color: #c17900;
+}
